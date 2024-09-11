@@ -1,0 +1,18 @@
+.cover-image {
+  margin-bottom: 2em;
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.book .book-summary {
+  background: black;
+}
+.book .book-summary {
+  background-image: url("images/cover1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px; /* Ajusta este valor según sea necesario */
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 8 Aplicaciones Shiny | Manual de Bovinometría en Búfalos</title>
+  <meta name="description" content="Este es un manual que establece la correcta toma de medidas morfométricas en ganado bufalino." />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 8 Aplicaciones Shiny | Manual de Bovinometría en Búfalos" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Este es un manual que establece la correcta toma de medidas morfométricas en ganado bufalino." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 8 Aplicaciones Shiny | Manual de Bovinometría en Búfalos" />
+  
+  <meta name="twitter:description" content="Este es un manual que establece la correcta toma de medidas morfométricas en ganado bufalino." />
+  
+
+<meta name="author" content="Sara Melisa Franco Gómez, Vanessa Londoño Londoño, Divier Antonio Agudelo Gómez, Oscar Andrés Sáenz Ruiz" />
+
+
+<meta name="date" content="2024-09-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="resultados-esperados.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
+<li class="chapter" data-level="1" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="objetivos.html"><a href="objetivos.html"><i class="fa fa-check"></i><b>2</b> Objetivos</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="objetivos.html"><a href="objetivos.html#objetivo-general"><i class="fa fa-check"></i><b>2.1</b> Objetivo general</a></li>
+<li class="chapter" data-level="2.2" data-path="objetivos.html"><a href="objetivos.html#objetivos-específicos"><i class="fa fa-check"></i><b>2.2</b> Objetivos específicos</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="metodología.html"><a href="metodología.html"><i class="fa fa-check"></i><b>3</b> Metodología</a></li>
+<li class="chapter" data-level="4" data-path="marco-teórico-y-estado-del-arte.html"><a href="marco-teórico-y-estado-del-arte.html"><i class="fa fa-check"></i><b>4</b> Marco Teórico y Estado del Arte</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="marco-teórico-y-estado-del-arte.html"><a href="marco-teórico-y-estado-del-arte.html#medidas-morfométricas-más-usadas-en-ganado-bovino"><i class="fa fa-check"></i><b>4.1</b> Medidas morfométricas más usadas en ganado bovino</a></li>
+<li class="chapter" data-level="4.2" data-path="marco-teórico-y-estado-del-arte.html"><a href="marco-teórico-y-estado-del-arte.html#instrumentos-de-medición"><i class="fa fa-check"></i><b>4.2</b> Instrumentos de medición</a></li>
+<li class="chapter" data-level="4.3" data-path="marco-teórico-y-estado-del-arte.html"><a href="marco-teórico-y-estado-del-arte.html#estudios-previos"><i class="fa fa-check"></i><b>4.3</b> Estudios previos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="medidas-morfométricas.html"><a href="medidas-morfométricas.html"><i class="fa fa-check"></i><b>5</b> Medidas Morfométricas</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="medidas-morfométricas.html"><a href="medidas-morfométricas.html#altura-a-la-cruz-ac"><i class="fa fa-check"></i><b>5.1</b> Altura a la cruz (AC)</a></li>
+<li class="chapter" data-level="5.2" data-path="medidas-morfométricas.html"><a href="medidas-morfométricas.html#altura-al-sacro-as"><i class="fa fa-check"></i><b>5.2</b> Altura al sacro (AS)</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="consideraciones-éticas.html"><a href="consideraciones-éticas.html"><i class="fa fa-check"></i><b>6</b> Consideraciones Éticas</a></li>
+<li class="chapter" data-level="7" data-path="resultados-esperados.html"><a href="resultados-esperados.html"><i class="fa fa-check"></i><b>7</b> Resultados Esperados</a></li>
+<li class="chapter" data-level="8" data-path="aplicaciones-shiny.html"><a href="aplicaciones-shiny.html"><i class="fa fa-check"></i><b>8</b> Aplicaciones Shiny</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Manual de Bovinometría en Búfalos</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="aplicaciones-shiny" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Chapter 8</span> Aplicaciones Shiny<a href="aplicaciones-shiny.html#aplicaciones-shiny" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- ```{r, echo=FALSE} -->
+<!-- library(shinylive) -->
+<!-- app <- shinyApp( -->
+<!--   ui = fluidPage( -->
+<!--     sliderInput("n", "Number of points", 1, 100, 50), -->
+<!--     plotOutput("plot") -->
+<!--   ), -->
+<!--   server = function(input, output) { -->
+<!--     output$plot <- renderPlot({ -->
+<!--       plot(rnorm(input$n), rnorm(input$n)) -->
+<!--     }) -->
+<!--   } -->
+<!-- ) -->
+<!-- shinylive::save_html(app, "app.html") -->
+<!-- ``` -->
+<!-- ```{r, echo=FALSE} -->
+<!-- library(shiny) -->
+<!-- shinyApp( -->
+<!--   ui = fluidPage( -->
+<!--     sliderInput("n", "Número de puntos", 1, 100, 50), -->
+<!--     plotOutput("plot") -->
+<!--   ), -->
+<!--   server = function(input, output) { -->
+<!--     output$plot <- renderPlot({ -->
+<!--       plot(rnorm(input$n), rnorm(input$n)) -->
+<!--     }) -->
+<!--   }, -->
+<!--   options = list(height = 500) -->
+<!-- ) -->
+<!-- ``` -->
+
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div class="csl-entry">
+Cárdenas, M. A. R., and L. E. A. Guanga. 2018. <span>“Caracterización Morfométrica e Índices Zoométricos de Los Grupos Raciales Bovinos Existentes En Los Cantones Occidentales de La Provincia Del Azuay.”</span> PhD thesis, Universidad de Cuenca. <a href="http://dspace.ucuenca.edu.ec/bitstream/123456789/28336/1/Trabajo%20de%20titulaci%c3%b3n.pdf">http://dspace.ucuenca.edu.ec/bitstream/123456789/28336/1/Trabajo%20de%20titulaci%c3%b3n.pdf</a>.
+</div>
+<div class="csl-entry">
+Estrada, A. S., and F. D. García. 2009. <span>“Relación de Medidas Bovinométricas y Medidas Lineales de La Ubre Con Producción de Leche y Con La Edad Al Primer Parto En Vacas Primerizas Holstein En El CIC Santamaría Del Puyón de La Universidad de La Salle.”</span> PhD thesis, Universidad de La Salle. <a href="https://ciencia.lasalle.edu.co/cgi/viewcontent.cgi?article=1089&amp;context=zootecnia">https://ciencia.lasalle.edu.co/cgi/viewcontent.cgi?article=1089&amp;context=zootecnia</a>.
+</div>
+<div class="csl-entry">
+González Tomalá, R. C. 2021. <span>“Caracterización de Medidas Morfométricas y Faneróptocas En Cerdos Criollo (Sus Scrofa Spp) de La Parroquia de Manglaralto – Provincia de Santa Elena.”</span> PhD thesis, Universidad Estatal Península de Santa Elena. <a href="https://repositorio.upse.edu.ec/bitstream/46000/6397/1/UPSE-TIA-2021-0037.pdf">https://repositorio.upse.edu.ec/bitstream/46000/6397/1/UPSE-TIA-2021-0037.pdf</a>.
+</div>
+<div class="csl-entry">
+Instituto Colombiano Agropecuario - ICA. 2022. <span>“Censo Bufalino En Colombia.”</span> <a href="https://www.ica.gov.co/areas/pecuaria/servicios/epidemiologia-veterinaria/censos-2016/censo-2018">https://www.ica.gov.co/areas/pecuaria/servicios/epidemiologia-veterinaria/censos-2016/censo-2018</a>.
+</div>
+<div class="csl-entry">
+Medina, J. F. 2005. <span>“Caracterización Bovinométrica de Hembras Cebú y Cruces Con Blanco Orejinegro, Romosinuano y Angus.”</span> <em>Rev MVZ Córdoba</em> 10 (1): 581–88. <a href="https://doi.org/10.21897/rmvz.480">https://doi.org/10.21897/rmvz.480</a>.
+</div>
+<div class="csl-entry">
+Vargas, D., G. Martinez, and O. Colmenares. s.f. <span>“Tamaño de Vacas Doble Propósito y Su Relación Con La Producción de Leche e Intervalos Entre Otros.”</span> <a href="https://www.researchgate.net/profile/Daniel-Vargas-5/publication/305114933_TAMANO_DE_VACAS_DOBLE_PROPOSITO_Y_SU_RELACION_CON_LA_PRODUCCION_DE_LECHE_E_INTERVALOS_ENTRE_PARTOS/links/5782778e08ae5f367d3b5ec0/TAMANO-DE-VACAS-DOBLE-PROPOSITO-Y-SU-RELACION-CON-LA-PRODUCCION-DE-LECHE-E-INTERVALOS-ENTRE-PARTOS.pdf">https://www.researchgate.net/profile/Daniel-Vargas-5/publication/305114933_TAMANO_DE_VACAS_DOBLE_PROPOSITO_Y_SU_RELACION_CON_LA_PRODUCCION_DE_LECHE_E_INTERVALOS_ENTRE_PARTOS/links/5782778e08ae5f367d3b5ec0/TAMANO-DE-VACAS-DOBLE-PROPOSITO-Y-SU-RELACION-CON-LA-PRODUCCION-DE-LECHE-E-INTERVALOS-ENTRE-PARTOS.pdf</a>.
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="resultados-esperados.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/08-shiny-app.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

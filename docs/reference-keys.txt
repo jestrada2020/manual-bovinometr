@@ -1,0 +1,16 @@
+introducción
+objetivos
+objetivo-general
+objetivos-específicos
+metodología
+marco-teórico-y-estado-del-arte
+medidas-morfométricas-más-usadas-en-ganado-bovino
+instrumentos-de-medición
+estudios-previos
+medidas-morfométricas
+altura-a-la-cruz-ac
+altura-al-sacro-as
+consideraciones-éticas
+resultados-esperados
+aplicaciones-interactivas
+shiny
