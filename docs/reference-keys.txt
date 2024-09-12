@@ -16,3 +16,4 @@ aplicaciones-interactivas
 shiny
 herramienta-para-realizar-cálculos
 herramienta-para-realizar-gráficas
+herramientas-para-cálculo-estadístico
