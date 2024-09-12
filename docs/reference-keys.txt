@@ -14,3 +14,5 @@ consideraciones-éticas
 resultados-esperados
 aplicaciones-interactivas
 shiny
+herramienta-para-realizar-cálculos
+herramienta-para-realizar-gráficas
