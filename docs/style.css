@@ -1,5 +1,5 @@
 .cover-image {
-  margin-bottom: 2em;
+  margin-bottom: 5em;
 }
 
 .cover-image img {
@@ -8,11 +8,7 @@
 }
 
 .book .book-summary {
-  background: black;
+  background: grey;
+  color: white;
 }
-.book .book-summary {
-  background-image: url("images/cover1.jpg");
-  background-size: cover;
-  background-position: center;
-  padding-top: 100px; /* Ajusta este valor según sea necesario */
 }
