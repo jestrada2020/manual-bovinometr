@@ -13,7 +13,8 @@ altura-al-sacro-as
 consideraciones-éticas
 resultados-esperados
 aplicaciones-interactivas
-shiny
+shiny---estadística
 herramienta-para-realizar-cálculos
 herramienta-para-realizar-gráficas
 herramientas-para-cálculo-estadístico
+herramienta-para-hoja-de-cálculo
