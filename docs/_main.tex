@@ -1,6 +1,7 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
 ]{book}
@@ -75,20 +76,32 @@
 \hypersetup{
   pdftitle={Manual de Bovinometría en Búfalos},
   pdfauthor={Sara Melisa Franco Gómez, Vanessa Londoño Londoño, Divier Antonio Agudelo Gómez, Oscar Andrés Sáenz Ruiz},
-  hidelinks,
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
 \title{Manual de Bovinometría en Búfalos}
 \author{Sara Melisa Franco Gómez, Vanessa Londoño Londoño, Divier Antonio Agudelo Gómez, Oscar Andrés Sáenz Ruiz}
-\date{2024-09-13}
+\date{2024-09-15}
 
 \begin{document}
 \maketitle
 
 {
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\chapter*{Prefacio}\label{prefacio}
+\addcontentsline{toc}{chapter}{Prefacio}
+
+\begin{figure}
+\includegraphics[width=0.6\linewidth]{images/cover} \caption{Portada manual de estandarización para medidas morfométricas en búfalos.}\label{fig:sf-ogc}
+\end{figure}
+
 Este manual tiene como objetivo establecer la correcta
 toma de medidas morfométricas en ganado bufalino,
 con la finalidad de obtener información que apoye los
