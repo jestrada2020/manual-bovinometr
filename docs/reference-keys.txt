@@ -18,6 +18,7 @@ aplicaciones-interactivas
 frecuencia-relativa
 shiny---estadística
 herramienta-para-realizar-cálculos
-herramienta-para-realizar-gráficas
+herramienta-para-realizar-gráficas-2d
+herramienta-para-realizar-gráficas-3d
 herramientas-para-cálculo-estadístico
 herramienta-para-hoja-de-cálculo
